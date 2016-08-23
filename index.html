@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="mainController">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="/node_modules/angular/angular-csp.css" rel="stylesheet">
+    <link href="/app/public/bootstrap.min.css" rel="stylesheet">
+
+    <script src="/node_modules/angular/angular.min.js" rel="script"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js" rel="script"></script>
+    <script src="/siofu/client.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="/app/app.js" rel="script"></script>
+    <script src="/app/mainController.js" rel="script"></script>
+    <script src="/app/fileUpload.js" rel="script"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Angular File upload with socket.io</a>
+        </div>
+    </div>
+</nav>
+<div ui-view></div>
+</body>
+</html>
